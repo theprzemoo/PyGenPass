@@ -63,12 +63,12 @@ Or on Windows, double-click `run.bat`.
 
 ```
 PyGenPass/
-├── main.py   # Main application
-├── icon.ico                   # App icon
+├── main.py                # Main application
+├── icon.ico               # App icon
 ├── run.bat                # Windows launcher
-├── requirements.txt           # Dependencies
-├── LICENSE                    # MIT License
-└── README.md                  # This file
+├── requirements.txt       # Dependencies
+├── LICENSE                # MIT License
+└── README.md              # This file
 ```
 
 ---
