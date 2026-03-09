@@ -174,15 +174,16 @@ class PasswordGeneratorApp(ctk.CTk):
     def __init__(self):
         super().__init__()
         self.title("PyGenPass")
-        self.geometry("580x900")
+        self.geometry("580x980")
         self.resizable(False, False)
         self.configure(fg_color=BG)
 
         # Icon – icon.ico must be in the same folder as the script
         import os, sys
-        _icon = os.path.join(os.path.dirname(os.path.abspath(sys.argv[0])), "icon.ico")
+        _base = os.path.dirname(os.path.abspath(__file__))
+        _icon = os.path.join(_base, "icon.ico")
         if os.path.exists(_icon):
-            try: self.iconbitmap(_icon)
+            try: self.iconbitmap(default=_icon)
             except Exception: pass
 
         self._history:    list[dict] = []
@@ -497,3 +498,4 @@ class PasswordGeneratorApp(ctk.CTk):
 if __name__ == "__main__":
     app = PasswordGeneratorApp()
     app.mainloop()
+    
