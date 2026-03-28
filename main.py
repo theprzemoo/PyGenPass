@@ -180,8 +180,8 @@ class PasswordGeneratorApp(ctk.CTk):
 
         # Icon – icon.ico must be in the same folder as the script
         import os
-_icon = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icon.ico")
-self.after(200, lambda: self.iconbitmap(_icon))
+        _icon = os.path.join(os.path.dirname(os.path.abspath(__file__)), "icon.ico")
+        self.after(200, lambda: self.iconbitmap(_icon))
 
         self._history:    list[dict] = []
         self._animating:  bool       = False
